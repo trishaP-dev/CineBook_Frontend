@@ -8,7 +8,6 @@ import profile from './profile.png'
 export const assets = {
     logo,
     harryPotterLogo,
-    HarryLogo,
     googlePlay,
     appStore,
     screenImage,
