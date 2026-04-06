@@ -2,8 +2,8 @@
 @import "tailwindcss";
 
 @theme{
-  --color-primary: #F84565;
-  --color-primary-dull: #D63854;
+  --color-primary: #008080;
+  --color-primary-dull: #338c8c;
 }
 *{
   font-family: "Martel Sans", sans-serif;

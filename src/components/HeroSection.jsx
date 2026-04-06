@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <div className='flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-27 bg-[url("/img.jpg")]
     bg-cover bg-top h-screen'>
-        <img src={assets.harryLogo} alt=" " className='max-h-19 lg:h-31  mt-20'/>
+        <img src={assets.harryPotterLogo} alt=" " className='max-h-19 lg:h-31  mt-20'/>
         <h1 className='text-5xl md:text-[70px] md:leading-18 font-semibold max-w-137'>Harry Potter and the Deathly Hallows: Part 1</h1>
 
         <div className='flex items-center gap-4 text-gray-300'>

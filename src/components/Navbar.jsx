@@ -1,6 +1,6 @@
 import { MenuIcon, SearchIcon, TicketPlus, XIcon } from 'lucide-react'
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate , NavLink} from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { useClerk , UserButton, useUser} from '@clerk/react';
 
@@ -29,11 +29,26 @@ function Navbar() {
 
           {/*menu */}
           {/* on clicking any link navigate to the page, close the menu and scroll to the top */}
-          <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/'>Home</Link>
-          <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/movies'>Movies</Link>
-          <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/'>Theaters</Link>
-          <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/'>Releases</Link>
-          <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/favourite'>Favourite</Link>
+          {/* <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/'>Home</Link> */}
+          {/* <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/movies'>Movies</Link> */}
+          {/* <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/'>Theaters</Link> */}
+          {/* <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/'>Releases</Link> */}
+          {/* <Link onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/favourite'>Favourite</Link> */}
+          <NavLink 
+          onClick={()=>{scrollTo(0,0); setIsOpen(false)}} 
+          to='/'
+          className={({isActive}) => isActive ? 'text-primary font-semibold' : ''}
+        >Home</NavLink>
+
+        <NavLink 
+          onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/movies' 
+          className={({isActive}) => isActive ? 'text-primary font-semibold' : ''}
+          >Movies</NavLink>
+
+        <NavLink 
+          onClick={()=>{scrollTo(0,0); setIsOpen(false)}} to='/favourite'
+          className={({isActive}) => isActive ? 'text-primary font-semibold' : ''}
+        >Favourite</NavLink>
         </div>
 
         <div className='flex items-center gap-8'>
@@ -51,7 +66,7 @@ function Navbar() {
               )
             }
         </div>
-        <MenuIcon className='max-md:ml-4 md:hidden w-8 h-8 cursor-pointer' onClick={()=>setIsOpen(!isOpen)}/>
+        <MenuIcon className=' max-md:ml-4 md:hidden w-8 h-8 cursor-pointer' onClick={()=>setIsOpen(!isOpen)}/>
           {/* onclicking opens and closes menu */}
     </div>
   )
