@@ -1,6 +1,5 @@
 import logo from './logo.png'
 import harryPotterLogo from './harryPotterLogo.png'
-import HarryLogo from './harryLogo.png'
 import googlePlay from './googlePlay.svg'
 import appStore from './appStore.svg'
 import screenImage from './screenImage.svg'
