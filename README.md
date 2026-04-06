@@ -3,7 +3,7 @@
 A modern movie ticket booking web application built with React. Browse now-playing movies, select seats, and book tickets seamlessly.
 
 ---
-
+Admin Dashboard [LINK](https://cine-book-frontend-sigma.vercel.app/admin)
 ## Tech Stack
 
 - **React 19** — UI framework
