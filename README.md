@@ -51,7 +51,7 @@ Create a `.env` file in the root directory:
 ```env
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 VITE_BACKEND_URL=your_backend_url
-VITE_CURRENCY=₹
+VITE_CURRENCY=$
 ```
 
 ### Run the dev server
