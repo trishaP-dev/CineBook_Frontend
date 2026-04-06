@@ -19,7 +19,6 @@ A modern movie ticket booking web application built with React. Browse now-playi
 
 ## Features
 
-- Browse now-playing movies fetched from TMDB
 - User authentication via Clerk
 - Movie detail pages with trailers
 - Seat selection and ticket booking
